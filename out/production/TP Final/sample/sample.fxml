@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="511.0" prefWidth="834.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="490.0" prefWidth="834.0" GridPane.rowIndex="1">
+            <children>
+                <Button fx:id="btn_generar" layoutX="456.0" layoutY="199.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Generar" />
+                <ImageView id="img_check" fx:id="img_check" fitHeight="35.0" fitWidth="16.0" layoutX="387.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" translateX="-70.0" translateY="65.0" visible="false" AnchorPane.bottomAnchor="333.0" AnchorPane.rightAnchor="431.0">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                    <image>
+                        <Image url="@checked%20(1).png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="txt_cantSim" layoutX="394.0" layoutY="75.0" prefHeight="25.0" prefWidth="164.0" />
+                <Label layoutX="233.0" layoutY="79.0" prefHeight="17.0" prefWidth="138.0" text="Cantidad de simulaciones" />
+                <Label layoutX="233.0" layoutY="118.0" prefHeight="17.0" prefWidth="131.0" text="Desde" />
+                <Label layoutX="233.0" layoutY="155.0" prefHeight="17.0" prefWidth="109.0" text="Hasta" />
+                <TextField fx:id="txt_desde" layoutX="394.0" layoutY="114.0" prefHeight="25.0" prefWidth="164.0" />
+                <TextField fx:id="txt_hasta" layoutX="394.0" layoutY="151.0" prefHeight="25.0" prefWidth="164.0" />
+                <Label layoutX="348.0" layoutY="14.0" text="Hospital">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="215.0" layoutY="56.0" prefHeight="0.0" prefWidth="390.0" />
+            <Label alignment="CENTER" layoutX="58.0" layoutY="249.0" text="Parametros">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="292.0" text="Llegada Paciente con Turno -Exp. Negativa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="117.0" layoutY="317.0" text="Media" />
+            <TextField fx:id="txt_media_con" layoutX="164.0" layoutY="313.0" prefHeight="25.0" prefWidth="102.0" text="15" />
+            <Label layoutX="60.0" layoutY="395.0" text="Llegada Paciente sin Turno -Exp. Negativa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="117.0" layoutY="425.0" text="Media" />
+            <TextField fx:id="txt_media_sin" layoutX="164.0" layoutY="421.0" prefHeight="25.0" prefWidth="102.0" text="2" />
+            <Label layoutX="348.0" layoutY="292.0" text="Fin Atencion Secretaria -Uniforme ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="373.0" layoutY="317.0" text="A" />
+            <TextField fx:id="txt_a_secretaria" layoutX="395.0" layoutY="313.0" prefHeight="25.0" prefWidth="102.0" text="4" />
+            <Label layoutX="374.0" layoutY="347.0" text="B" />
+            <TextField fx:id="txt_b_secretaria" layoutX="395.0" layoutY="343.0" prefHeight="25.0" prefWidth="102.0" text="10" />
+            <Label layoutX="572.0" layoutY="292.0" text="Fin Atencion Medico  -Normal">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="620.0" layoutY="317.0" text="Media" />
+            <TextField fx:id="txt_media_medico" layoutX="673.0" layoutY="313.0" prefHeight="25.0" prefWidth="102.0" text="15" />
+            <Label layoutX="548.0" layoutY="347.0" text="Desviación Estándar" />
+            <TextField fx:id="txt_desv_medico" layoutX="673.0" layoutY="343.0" prefHeight="25.0" prefWidth="102.0" text="10" />
+            <Label layoutX="336.0" layoutY="422.0" text=" Turnos">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="txt_cant_turnos" layoutX="395.0" layoutY="420.0" prefHeight="25.0" prefWidth="102.0" text="15" />
+                <Button fx:id="btn_limpiar" layoutX="339.0" layoutY="199.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Limpiar" />
+             
+             <Label layoutX="558.0" layoutY="417.0" text="Cierre consultorio">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="txt_cierre_consultorio" layoutX="674.0" layoutY="413.0" prefHeight="25.0" prefWidth="101.0" text="300" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
